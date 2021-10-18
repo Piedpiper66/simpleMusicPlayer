@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "SF Pro SC";
+    /* overflow: hidden; */
+}
+
+body::after {
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+    /* background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); */
+    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+    /* background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%); */
+    /* background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); */
+}
+
+#instance {
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+#albumBox {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: imgRotate 6s linear infinite;
+}
+
+#albumBox img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* #albumBox::after {
+    content: '';
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    border-radius: 50%;
+    box-shadow: 0 0 1px 2px rgba(255, 255, 255, .8);
+    top: 50%;
+    left: 50%;
+    margin-top: calc(120% * -.5);
+    margin-left: calc(120% * -.5);
+    animation: halo 1s .3s infinite ease-out;
+} */
+
+#albumBox>div:nth-child(0) {
+    animation-delay: -.2s;
+}
+#albumBox>div:nth-child(1) {
+    animation-delay: 0s;
+}
+#albumBox>div:nth-child(2) {
+    animation-delay: .2s;
+}
+#albumBox>div:nth-child(3) {
+    animation-delay: .4s;
+}
+
+
+#albumBox>div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: calc(130% * -.5);
+    margin-left: calc(130% * -.5);
+    border-radius: 50%;
+    border: 2px solid #fff;
+    width: 130%;
+    height: 130%;
+    animation: ball-scale-ripple-multiple 1.3s infinite cubic-bezier(.21, .53, .56, .8);
+    animation-fill-mode: both;
+    z-index: -1;
+}
+
+#lyrics {
+    width: fit-content;
+    height: 10rem;
+    left: 50%;
+    overflow: hidden;
+    color: rgb(200, 200, 200);
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.wrap {
+    position: relative;
+    list-style: none;
+    height: max-content;
+}
+
+#lyrics p {
+    position: relative;
+    text-align: center;
+    line-height: 2rem;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    transition: font-size .3s;
+    word-break: break-all;
+}
+
+#lyrics p:hover {
+    background-color: rgba(165, 160, 160, 0.11);
+    cursor: pointer;
+}
+
+audio {
+    outline: none;
+}
+
+video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    width: auto;
+}
+
+source{  
+    min-width: 100%;  
+    min-height: 100%;  
+    height: auto;  
+    width: auto;  
+} 
+
+
+.active {
+    font-size: 1.2rem;
+    color: #fff;
+}

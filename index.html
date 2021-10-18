@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/musicSelect/mian.css">
+    <link rel="stylesheet" href="css/musicSelect/picDis.css">
+    <link rel="stylesheet" href="css/musicSelect/musicList.css">
+    <link rel="stylesheet" href="css/musicSelect/message.css">
+    <link rel="stylesheet" href="css/musicSelect/footer.css">
+</head>
+
+<body>
+    <div id="app">
+
+        <!-- 固定顶部 -->
+        <div id="global-header">
+            <div class="page-width-auto">
+                <div class="headerContent flex-center">
+                    <div class="section-search">
+                        <span>Search Music</span>
+                    </div>
+                    <div class="section-textLogo">
+                        <span>Let's Get Weird</span>
+                    </div>
+                    <div class="section-textNavi">
+                        <ul class="navi-wrap">
+                            <li>热门</li>
+                            <li>分类</li>
+                            <li>发现</li>
+                            <li>社区</li>
+                            <li>帮助</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 轮播 -->
+        <div id="pic-dis">
+            <div class="cm-banner">  
+                <div class="banner-ul-wrap">    
+                    <ul id="cm-banner-list">
+                        <li>
+                            <span class="banner-album">Melodrama</span>
+                            <span class="banner-author">Lorde</span>
+                        </li>
+                        <li>
+                            <span class="banner-album">rice & shine</span>
+                            <span class="banner-author">Eason</span>
+                        </li>
+                    
+                        <li>
+                            <span class="banner-album">Havana</span>
+                            <span class="banner-author">Camila Cabello</span>
+                        </li>
+                    
+                        <li>
+                            <span class="banner-album">Let You Down</span>
+                            <span class="banner-author">NF</span>
+                        </li>
+                    
+                        <li>
+                            <span class="banner-album">Oh My Love</span>
+                            <span class="banner-author">John Lennon</span>
+                        </li> 
+                    </ul>    
+                    <ul class="cm-banner-num" id="cm-banner-num"></ul>  
+                </div>  
+                <div class="cm-banner-in">    
+                    <!-- <img src="img/left.png" id="cm-prev" class="cm-banner-arrow" /> -->
+                    <span class="cm-banner-arrow" id="cm-prev">&lt;</span> 
+                    <!-- <img src="img/right.png" id="cm-next" class="cm-banner-arrow" /> -->
+                    <span class="cm-banner-arrow" id="cm-next">&gt;</span> 
+                </div>
+            </div>
+        </div>
+
+        <!-- 图片栅栏 -->
+        <div id="music-list-wrap">
+            <div class="classBlock">
+                <ul>
+                    <li><div class="mask">流行</div></li>
+                    <li><div class="mask">古典</div></li>
+                    <li><div class="mask">金曲</div></li>
+                </ul>
+            </div>
+            <div class="music-list">
+                <ul>
+                    <!-- 主框 -->
+                    <!-- 1 -->
+                    <li>
+                        <div class="musicContent">
+                        <ul>
+                            <!-- 框内一行 -->
+                            <a href="musicPlayer.html"><li>
+                                <div class="musicLogo"></div>
+                                <span>Love On The Brain</span>
+                                <span>Rihhana</span>
+                                <span>Crowd Pleasers</span>
+                                <span>3:48</span>
+                            </li></a>
+                            <a href="musicPlayer.html"><li>
+                                <div class="musicLogo"></div>
+                                <span>Go Solo</span>
+                                <span>Tom Rosenthal</span>
+                                <span>The Pleasant Trees</span>
+                                <span>2:22</span>
+                            </li></a>
+                            <a href="musicPlayer.html"><li>
+                                <div class="musicLogo"></div>
+                                <span>Finesse</span>
+                                <span>Bruno Mars</span>
+                                <span>24K Magic</span>
+                                <span>3:11</span>
+                            </li></a>
+                            <a href="musicPlayer.html"><li>
+                                <div class="musicLogo"></div>
+                                <span>Young Souls</span>
+                                <span>Broken Back</span>
+                                <span>Dear Misfortune</span>
+                                <span>3:39</span>
+                            </li></a>
+                            <a href="musicPlayer.html"><li>
+                                <div class="musicLogo"></div>
+                                <span>Older</span>
+                                <span>Sasha Sloan</span>
+                                <span>Older</span>
+                                <span>3:11</span>
+                            </li></a>
+                        </ul>
+                        </div>
+                    </li>
+                    <!-- 2 -->
+                    <li>
+                        <div class="musicContent">
+                            <ul>
+                                <!-- 框内一行 -->
+                                <a href="musicPlayer.html"><li>
+                                    <div class="musicLogo"></div>
+                                    <span>永远同在</span>
+                                    <span>木村弓</span>
+                                    <span>千与千寻</span>
+                                    <span>3:35</span>
+                                </li></a>
+                                <a href="musicPlayer.html"><li>
+                                    <div class="musicLogo"></div>
+                                    <span>Aurora Borealis</span>
+                                    <span>John H.Clarke</span>
+                                    <span>String & Woods</span>
+                                    <span>5:22</span>
+                                </li></a>
+                                <a href="musicPlayer.html"><li>
+                                    <div class="musicLogo"></div>
+                                    <span>Kommissar Maigret</span>
+                                    <span>Quadro Nuevo</span>
+                                    <span>Luna Rossa</span>
+                                    <span>3:12</span>
+                                </li></a>
+                                <a href="musicPlayer.html"><li>
+                                    <div class="musicLogo"></div>
+                                    <span>Zigeunerweisen</span>
+                                    <span>Jascha Heifetz</span>
+                                    <span>TCHAIKOVSKY</span>
+                                    <span>8:22</span>
+                                </li></a>
+                                <a href="musicPlayer.html"><li>
+                                    <div class="musicLogo"></div>
+                                    <span>Cornfield Chase</span>
+                                    <span>6 & 9</span>
+                                    <span>星际穿越</span>
+                                    <span>2:06</span>
+                                </li></a>
+                            </ul>
+                            </div>
+                    </li>
+                    <!-- 3 -->
+                    <li>
+                        <div class="musicContent">
+                            <ul>
+                                <!-- 框内一行 -->
+                                <a href="musicPlayer.html"><li>
+                                    <div class="musicLogo"></div>
+                                    <span>富士山下</span>
+                                    <span>陈奕迅</span>
+                                    <span>What's going on?</span>
+                                    <span>4:19</span>
+                                </li></a>
+                                <a href="musicPlayer.html"><li>
+                                    <div class="musicLogo"></div>
+                                    <span>冷雨夜</span>
+                                    <span>Beyond</span>
+                                    <span>BEYOUND金蝶至尊精选</span>
+                                    <span>5:00</span>
+                                </li></a>
+                                <a href="musicPlayer.html"><li>
+                                    <div class="musicLogo"></div>
+                                    <span>讲不出再见</span>
+                                    <span>谭咏麟</span>
+                                    <span>二十年白金畅销金曲全记录</span>
+                                    <span>4:54</span>
+                                </li></a>
+                                <a href="musicPlayer.html"><li>
+                                    <div class="musicLogo"></div>
+                                    <span>你瞒我瞒</span>
+                                    <span>陈柏宇</span>
+                                    <span>Can't Be Half</span>
+                                    <span>3:59</span>
+                                </li></a>
+                                <a href="musicPlayer.html"><li>
+                                    <div class="musicLogo"></div>
+                                    <span>海阔天空</span>
+                                    <span>Beyond</span>
+                                    <span>海阔天空</span>
+                                    <span>5:26</span>
+                                </li></a>
+                            </ul>
+                            </div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        <!-- 留言板 -->
+        <div id="MessageBoard">
+            <div class="mainBoard">
+                <ul class="guestMsgWrap">
+                    <!-- <li>
+                        <div class="msgInfo">
+                            <span class="floor"># 1楼</span>
+                            <span class="msgTime">2020-12-15 10:11:11</span>
+                        </div>
+                        <div class="msgText">太骚了, 期待收货</div>
+                    </li> -->
+                </ul>
+            </div>
+            <div class="sendBar">
+                <div class="sendBlock">
+                    <div class="messageBar">
+                        <input type="text" placeholder="说点什么吧..." id="msgLoader">
+                    </div>
+                    <button id="sendBtn">发送</button>
+                </div>
+                <div class="funcBlock">
+                    <button>点赞</button>
+                    <button>打赏</button>
+                    <button>收藏</button>
+                </div>
+            </div>
+        </div>
+        <!-- 底部 -->
+        <footer>
+            <p>&copy;RYF版权所有, 转载请注明出处</p>
+        </footer>
+
+        <!-- 回到顶部按钮 -->
+        <div id="backToTop">
+            <span>向上冲</span>
+        </div>
+
+    </div>
+
+</body>
+<script src="./js/jquery-3.4.1.js"></script>
+<script src="./js/03.js"></script>
+<script src="./js/musicList.js"></script>
+<script src="./js/msgBoard.js"></script>
+<script src="./js/toTop.js"></script>
+
+</html>

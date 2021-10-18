@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 8px;
+    background-image:url(../../static/img/impression.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    min-width: 1519.2px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#app {
+    height: 100%;
+    width: 100%;
+    
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col-flex-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#global-header {
+    background: linear-gradient(180deg, rgba(0, 0, 0, .4), transparent);
+    color: #fff;
+    position: relative;
+    width: 100%;
+    z-index: 200;
+}
+
+.page-width-auto {
+    width: 170rem;
+    padding: 0 8rem;
+    margin: 0 auto;
+}
+
+.headerContent {
+    height: 130px;
+    display: flex;
+    align-items: center;
+}
+
+.section-search {
+    font-size: 3rem;
+    font-family: Benton Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    transition: font-size .3s;
+    cursor: pointer;
+}
+
+.section-search:hover {
+    font-size: 3.5rem;
+}
+
+.section-textLogo {
+    background: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 250px;
+}
+
+.section-textLogo span {
+    font-size: 6rem;
+    font-family: "Ink Free";
+    font-weight: bolder;
+}
+
+.section-textNavi {
+
+}
+
+.section-textNavi ul {
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-textNavi ul li {
+    line-height: 130px;
+    padding: 0 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: background-color .5s;
+}
+
+.section-textNavi ul li:hover {
+    background-color: rgba(255, 255, 255, .3);
+}

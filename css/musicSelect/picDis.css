@@ -1,0 +1,115 @@
+#pic-dis {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.cm-banner {
+    width: 50%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+
+#cm-banner-list .banner-ul-wrap {
+    width: 100%;
+    height: 100%;
+}
+
+#cm-banner-list li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#cm-banner-list li:nth-of-type(1) {
+    background: url(../../static/img/lorde.jpg) 0 0 /cover;
+    /* background-size: 100%; */
+}
+#cm-banner-list li:nth-of-type(2) {
+    background: url(../../static/img/eason.JPG) 0 0/cover;
+    /* background-size: cover; */
+}
+#cm-banner-list li:nth-of-type(3) {
+    background: url(../../static/img/havana.JPG) 0 0/cover;
+    /* background-size: 100%; */
+}
+#cm-banner-list li:nth-of-type(4) {
+    background: url(../../static/img/TF.JPG) 0 0/cover;
+    /* background-size: cover; */
+}
+#cm-banner-list li:nth-of-type(5) {
+    background: url(../../static/img/lennon.JPG) 0 0/cover;
+    /* background-size: cover; */
+}
+
+#cm-banner-list li img {
+    width: 770px;
+    height: 400px;
+}
+
+#cm-banner-list li span {
+    display: block;
+    position: absolute;
+    color: #fff;
+    right: 100px;
+    font-size: 2.5rem;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+
+.banner-album {
+    bottom: 80px;
+}
+
+#cm-banner-list li span.banner-author {
+    font-size: 1.5rem;
+    bottom: 60px;
+}
+
+.cm-banner-num {
+    width: 100%;
+    position: absolute;
+    top: 90%;
+    text-align: center;
+}
+
+.cm-banner-num li {
+    width: 10px;
+    margin-right: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: inline-block;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.cm-banner-num .active {
+    background-color: #3982de;
+}
+
+.cm-banner-arrow {
+    position: absolute;
+    top: 45%;
+    opacity: 0.5;
+    display: inline-block;
+    cursor: pointer;
+    padding: 30px 15px;
+    background-color: rgba(0, 0, 0, .3);
+    color: #fff;
+    font-size: 3rem;
+}
+
+#cm-prev {
+    left: 0;
+}
+
+#cm-next {
+    right: 0;
+    
+}

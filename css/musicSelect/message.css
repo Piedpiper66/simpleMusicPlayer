@@ -1,0 +1,110 @@
+#MessageBoard {
+    width: 100%;
+    padding: 0 150px;
+}
+
+#MessageBoard .mainBoard {
+    position: relative;
+    height: 400px;
+    /* background: hsla(0, 0%, 100%, .3); */
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 10px 80px;
+}
+
+#MessageBoard .mainBoard::before {
+    background: url(../../static/img/impression.jpg) 0 / cover fixed;
+}
+
+#MessageBoard .mainBoard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: blur(20px);
+    margin: -30px;
+}
+
+.guestMsgWrap {
+    /* height: 100%; */
+    overflow: auto;
+}
+
+.mainBoard .guestMsgWrap li {
+    position: relative;
+    color: #fff;
+    min-height: 50px;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-shadow: 1px -1px 10px rgba(255, 255, 255, .5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5px 80px;
+}
+
+.msgTime {
+    margin-left: 100px;
+    color: darkgray;
+}
+
+.msgText {
+    letter-spacing: 1px;
+}
+
+#MessageBoard .sendBar {
+    height: 50px;
+    margin: 20px 0;
+}
+
+.sendBar button {
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    /* transition: all .4s; */
+    border-radius: 5px;
+    height: 30px;
+    width: 60px;
+    letter-spacing: 1px;
+    outline: none;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, .5); 
+}
+
+.sendBar button:hover {
+    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+}
+
+.sendBlock, .messageBar,.funcBlock  {
+    display: inline-block;
+}
+
+.sendBlock {
+    float: left;
+    margin-left: 200px;
+    
+}
+
+.messageBar input {
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
+    padding-left: 10px;
+    letter-spacing: 1px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.funcBlock {
+    float: right;
+    margin-right: 200px;
+}
+
+.funcBlock button {
+    margin-left: 30px;
+}

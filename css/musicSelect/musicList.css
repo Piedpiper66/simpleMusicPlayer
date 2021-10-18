@@ -1,0 +1,209 @@
+#music-list-wrap {
+    width: 100%;
+    height: 500px;
+    /* border: 1px solid; */
+    margin-top: 170px;
+    padding: 0 150px;
+    margin-bottom: 100px;
+}
+
+.classBlock {
+    height: 100%;
+    float: left;
+}
+
+.classBlock ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.classBlock li {
+    position: relative;
+    cursor: pointer;
+    /* padding: 60px; */
+    color: #fff;
+    border-radius: 5px;
+    font-size: 2.5rem;
+    width: 160px;
+    height: 146px;
+}
+
+.classBlock li .mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 5px;
+    text-align: center;
+    line-height: 146px;
+    text-shadow: 1px -1px 10px rgba(0, 0, 0, .5);
+}
+
+.classBlock li .mask:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.active {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+
+/* .classBlock li .mask::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: blur(20px);
+    margin: -30px;
+} */
+
+.classBlock li:nth-of-type(1) {
+    background: url(../../static/img/popularClass.JPG) 0 0/cover;
+}
+
+.classBlock li:nth-of-type(2) {
+    background: url(../../static/img/oldClass.JPG) 0 0/cover;
+}
+
+.classBlock li:nth-of-type(3) {
+    background: url(../../static/img/goldClass.JPG) 0 0/cover;
+}
+
+.music-list {
+    float: right;
+    height: 100%;
+    width: calc(100% - 200px);
+    position: relative;
+}
+
+
+.music-list li {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.music-list li .musicContent {
+    position: relative;
+    background: hsla(0, 0%, 100%, .3);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.music-list li .musicContent::before {
+    background: url(../../static/img/impression.jpg) 0 / cover fixed;
+}
+
+.music-list li .musicContent::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: blur(20px);
+    margin: -30px;
+}
+
+.musicContent ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.musicContent ul li {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr 2fr 1fr;
+    align-items: center;
+    justify-items: start;
+    column-gap: 10px;
+    cursor: pointer;
+    height: 80px;
+    width: 100%;
+    transition: background-color .7s;
+    border-radius: 5px;
+    color: #fff;
+    text-shadow: 1px -1px 10px rgba(0, 0, 0, .5);
+    font-size: 1.75rem;
+    padding-left: 10px;
+}
+
+.musicContent ul li:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.musicLogo {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+}
+/*  */
+.music-list>ul>li:nth-of-type(1) a:nth-of-type(1) .musicLogo {
+    background: url(../../static/img/music-list-1-1.JPG) 0 0/cover;
+}
+.music-list>ul>li:nth-of-type(1) a:nth-of-type(2) .musicLogo {
+    background: url(../../static/img/music-list-1-2.JPG) 0 0/cover;
+}
+.music-list>ul>li:nth-of-type(1) a:nth-of-type(3) .musicLogo {
+    background: url(../../static/img/music-list-1-3.JPG) 0 0/cover;
+}
+.music-list>ul>li:nth-of-type(1) a:nth-of-type(4) .musicLogo {
+    background: url(../../static/img/music-list-1-4.JPG) 0 0/cover;
+}
+.music-list>ul>li:nth-of-type(1) a:nth-of-type(5) .musicLogo {
+    background: url(../../static/img/music-list-1-5.JPG) 0 0/cover;
+}
+/*  */
+.music-list>ul>li:nth-of-type(2) a:nth-of-type(1) .musicLogo {
+    background: url(../../static/img/music-list-2-1.JPG) 0 0/cover;
+}
+.music-list>ul>li:nth-of-type(2) a:nth-of-type(2) .musicLogo {
+    background: url(../../static/img/music-list-2-2.JPG) 0 0/cover;
+}
+.music-list>ul>li:nth-of-type(2) a:nth-of-type(3) .musicLogo {
+    background: url(../../static/img/music-list-2-3.JPG) 0 0/cover;
+}
+.music-list>ul>li:nth-of-type(2) a:nth-of-type(4) .musicLogo {
+    background: url(../../static/img/music-list-2-4.JPG) 0 0/cover;
+}
+.music-list>ul>li:nth-of-type(2) a:nth-of-type(5) .musicLogo {
+    background: url(../../static/img/music-list-2-5.JPG) 0 0/cover;
+}
+/*  */
+.music-list>ul>li:nth-of-type(3) a:nth-of-type(1) .musicLogo {
+    background: url(../../static/img/music-list-3-1.JPG) 0 0/cover;
+}
+.music-list>ul>li:nth-of-type(3) a:nth-of-type(2) .musicLogo {
+    background: url(../../static/img/music-list-3-2.JPG) 0 0/cover;
+}
+.music-list>ul>li:nth-of-type(3) a:nth-of-type(3) .musicLogo {
+    background: url(../../static/img/music-list-3-3.JPG) 0 0/cover;
+}
+.music-list>ul>li:nth-of-type(3) a:nth-of-type(4) .musicLogo {
+    background: url(../../static/img/music-list-3-4.JPG) 0 0/cover;
+}
+.music-list>ul>li:nth-of-type(3) a:nth-of-type(5) .musicLogo {
+    background: url(../../static/img/music-list-3-5.JPG) 0 0/cover;
+}
+
+.musicContent ul li table {
+    table-layout: fixed;
+}
